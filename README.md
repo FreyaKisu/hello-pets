@@ -1,3 +1,8 @@
+The Hello Pets application is an ongoing project for the purpose of learning new technologies, such as Next.js, Docker, Google Cloud etc.
+
+The application is an online diary for worldwide users with authentication to share their Pet-tivities and to discuss relevant topics on a forum.
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
