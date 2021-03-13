@@ -1,13 +1,11 @@
-$greypink: #98838F;
-$mediumblue: #89A6FB;
-$mayablue: #78C3FB;
-$turquoise: #16E0BD;
-$mantis: #6AC870; 
-$attentionred: #E05263;
-$violet: #724CF9;
+$greypink: #98838f;
+$mediumblue: #89a6fb;
+$mayablue: #78c3fb;
+$turquoise: #16e0bd;
+$mantis: #6ac870;
+$attentionred: #e05263;
+$violet: #724cf9;
 $textblack: rgb(71, 71, 71);
-
-
 
 .container {
   min-height: 100vh;
@@ -31,7 +29,7 @@ $textblack: rgb(71, 71, 71);
 
 .title {
   color: #fff;
-  font: 2em #fff;  
+  font: 2em #fff;
   letter-spacing: 2px;
   text-transform: uppercase;
 }
@@ -55,7 +53,6 @@ $textblack: rgb(71, 71, 71);
   justify-content: center;
   align-items: center;
 }
-
 
 .logo {
   height: 1em;
@@ -87,15 +84,14 @@ $textblack: rgb(71, 71, 71);
   flex-wrap: wrap;
   max-width: 1100px;
   grid-gap: 30px;
-  grid-template-columns: 100px  300px 600px  200px;
+  grid-template-columns: 100px 300px 600px 200px;
   grid-template-areas:
-             ".......  ...... header ......"
-             "....... funfact content .......";
+    ".......  ...... header ......"
+    "....... funfact content .......";
 }
 .box {
   padding: 10px;
-  }
-
+}
 
 .form {
   background-color: #fff;
@@ -104,67 +100,71 @@ $textblack: rgb(71, 71, 71);
   width: 500px;
   border-radius: 5%;
   padding: 20px;
-  font-size: 1.5em; 
+  font-size: 1.5em;
 
-  button{
+  button {
     border-radius: 10%;
     padding: 10px;
     font-size: 0.8em;
     border-style: none;
     color: $textblack;
   }
-  .loginButton{
+  .loginButton {
     background-color: $mantis;
   }
 
   .signupButton {
     background-color: $mediumblue;
   }
-   input {
+  input {
     padding: 5px;
- }  
+  }
 }
 
-.funfactContainer{
-  display: block;
+.loginLink {
+  border-radius: 10%;
+  padding: 10px;
+  font-size: 0.8em;
+  border-style: none;
+  color: #fff;
+  background-color: $mantis;
+}
+
+.signupLink {
+  border-radius: 10%;
+  padding: 10px;
+  font-size: 0.8em;
+  border-style: none;
+  color: #fff;
+  background-color: $greypink;
+}
+
+.funfactContainer {
+  display: flex;
   position: relative;
   margin: 40px 0;
-  .funfactTitle{
-    /* Absolute positioning makes it not take up vert space */
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  /* Border is the new background */
-  background: none;
-
-  /* Rotate from top left corner (not default) */
-  transform-origin: 0 0;
-  transform: rotate(270deg);
-  font: bold 1em Sans-Serif;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  background: $greypink;
-  color: #fff;
-  padding: 5px 10px;
-  margin: 0 0 10px 0;
-  line-height: 24px;
-  }
-
-  .funfactSubtitle{
+  
+  .funfactSubtitle {
     padding: 5px 5px;
     font: 1em Sans-Serif;
     letter-spacing: 3px;
     color: #fff;
     background-color: $greypink;
     width: 200px;
-  };
+  }
 
-  .funfact{
+  .funfactTextWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .funfactTitleWrapper {
+    position: relative;
+  }
+  .funfact {
     font: bold 0.8em;
     letter-spacing: 1px;
     color: $textblack;
   }
 }
-
-
