@@ -3,8 +3,8 @@ import styles from "../styles/Home.module.scss";
 import Image from "next/image";
 
 const FACTS = [
-  "Animals are best friends",
-  "Looking at animals makes you calm",
+  "Animals are best friends.",
+  "Looking at animals makes you calm.",
   "Petting a cat lowers blood pressure.",
 ];
 
@@ -23,7 +23,12 @@ export default function FunFacts() {
   return (
     <div className={styles.funfactContainer}>
       <div className={styles.funfactTitleWrapper}>
-      <Image src="/FunFactTitle.svg" alt="daily fun fact" width="50" height="auto"/>
+        <Image
+          src="/FunFactTitle.svg"
+          alt="daily fun fact"
+          width="50"
+          height="auto"
+        />
       </div>
       <div className={styles.funfactTextWrapper}>
         <p className={styles.funfact}>{fact}</p>

@@ -17,18 +17,12 @@ export default function HomeView() {
             <Image src="/pets.jpg" alt="Pets logo" width="100" height="100" />
             <h1 className={styles.title}>Hello Pets</h1>
             <Link href="/login" passHref>
-          <a className={styles.loginLink}>
-              Login
-            </a>
-          </Link>
-
-          <Link href="/signup" passHref>
-            <a className={styles.signupLink}>
-              Sign Up
-            </a>
-          </Link>
+              <a className={styles.loginLink}>Login</a>
+            </Link>
+            <Link href="/signup" passHref>
+              <a className={styles.signupLink}>Sign Up</a>
+            </Link>
           </div>
-         
           <div className={styles.funfact}>
             <FunFacts />
           </div>
