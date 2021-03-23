@@ -1,23 +1,21 @@
 import { useState, useEffect } from "react";
 import styles from "../styles/Home.module.scss";
 import Image from "next/image";
+import axios from "axios";
+import { API_ROUTES } from "../consts/routes";
 
-const FACTS = [
-  "Animals are best friends.",
-  "Looking at animals makes you calm.",
-  "Petting a cat lowers blood pressure.",
-];
-
-const getRandomFact = () => {
-  const randomIndex = Math.floor(Math.random() * FACTS.length);
-  return FACTS[randomIndex];
+const fetchRandomFact = async () => {
+  const response = await axios.get(API_ROUTES.DAILY_FACT);
+  const { data } = response;
+  return data.fact;
 };
 
 export default function FunFacts() {
   const [fact, setFact] = useState("");
 
-  useEffect(() => {
-    setFact(getRandomFact());
+  useEffect( async () => { 
+    const fact = await fetchRandomFact()
+    setFact(fact);
   }, []);
 
   return (
